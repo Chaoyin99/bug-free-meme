@@ -1,0 +1,336 @@
+version
+# Betaflight / STM32F411 (S411) 4.4.1 Apr 12 2023 / 23:12:35 (e43d591b2) MSP API: 1.45
+
+# config: YES
+# board: manufacturer_id: GEPR, board_name: GEPRCF411SX1280
+
+# status
+MCU F411 Clock=108MHz (PLLP-HSI), Vref=3.30V, Core temp=81degC
+Stack size: 2048, Stack address: 0x2001fff0
+Configuration: CONFIGURED, size: 3752, max available: 16384
+Devices detected: SPI:1, I2C:0
+Gyros detected: gyro 1 locked dma
+GYRO=ICM20689, ACC=ICM20689
+OSD: NONE (133 x 229)
+BUILD KEY: 31e29d175269cd0a04b250929f9d0e8f (4.4.1)
+System Uptime: 1986 seconds, Current Time: 2023-10-03T22:19:25.658+00:00
+CPU:31%, cycle time: 130, GYRO rate: 7692, RX rate: 15, System rate: 9
+Voltage: 116 * 0.01V (0S battery - NOT PRESENT)
+I2C Errors: 0
+SD card: Not configured
+FLASH: JEDEC ID=0x00ef4018 16M
+Arming disable flags: RXLOSS ANGLE CLI MSP
+
+# flash_info
+Flash sectors=256, sectorSize=65536, pagesPerSector=256, pageSize=256, totalSize=16777216 JEDEC ID=0x00ef4018
+Partitions:
+  0: FLASHFS   0 255
+FlashFS size=16777216, usedSize=16777216
+
+# dump hardware
+
+# version
+# Betaflight / STM32F411 (S411) 4.4.1 Apr 12 2023 / 23:12:35 (e43d591b2) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+board_name GEPRCF411SX1280
+manufacturer_id GEPR
+
+# resources
+resource BEEPER 1 A14
+resource MOTOR 1 B08
+resource MOTOR 2 A00
+resource MOTOR 3 B10
+resource MOTOR 4 B07
+resource MOTOR 5 NONE
+resource MOTOR 6 NONE
+resource MOTOR 7 NONE
+resource MOTOR 8 NONE
+resource SERVO 1 NONE
+resource SERVO 2 NONE
+resource SERVO 3 NONE
+resource SERVO 4 NONE
+resource SERVO 5 NONE
+resource SERVO 6 NONE
+resource SERVO 7 NONE
+resource SERVO 8 NONE
+resource PPM 1 NONE
+resource PWM 1 NONE
+resource PWM 2 NONE
+resource PWM 3 NONE
+resource PWM 4 NONE
+resource PWM 5 NONE
+resource PWM 6 NONE
+resource PWM 7 NONE
+resource PWM 8 NONE
+resource SERIAL_TX 1 A09
+resource SERIAL_TX 2 A02
+resource SERIAL_TX 3 NONE
+resource SERIAL_TX 4 NONE
+resource SERIAL_TX 5 NONE
+resource SERIAL_TX 6 NONE
+resource SERIAL_TX 7 NONE
+resource SERIAL_TX 8 NONE
+resource SERIAL_TX 9 NONE
+resource SERIAL_TX 10 NONE
+resource SERIAL_TX 11 NONE
+resource SERIAL_TX 12 NONE
+resource SERIAL_RX 1 A10
+resource SERIAL_RX 2 A03
+resource SERIAL_RX 3 NONE
+resource SERIAL_RX 4 NONE
+resource SERIAL_RX 5 NONE
+resource SERIAL_RX 6 NONE
+resource SERIAL_RX 7 NONE
+resource SERIAL_RX 8 NONE
+resource SERIAL_RX 9 NONE
+resource SERIAL_RX 10 NONE
+resource SERIAL_RX 11 NONE
+resource SERIAL_RX 12 NONE
+resource INVERTER 1 NONE
+resource INVERTER 2 NONE
+resource INVERTER 3 NONE
+resource INVERTER 4 NONE
+resource INVERTER 5 NONE
+resource INVERTER 6 NONE
+resource INVERTER 7 NONE
+resource INVERTER 8 NONE
+resource INVERTER 9 NONE
+resource INVERTER 10 NONE
+resource INVERTER 11 NONE
+resource INVERTER 12 NONE
+resource I2C_SCL 1 NONE
+resource I2C_SCL 2 NONE
+resource I2C_SCL 3 NONE
+resource I2C_SDA 1 NONE
+resource I2C_SDA 2 NONE
+resource I2C_SDA 3 NONE
+resource LED 1 C14
+resource LED 2 NONE
+resource LED 3 NONE
+resource RX_BIND 1 NONE
+resource RX_BIND_PLUG 1 NONE
+resource SPI_SCK 1 A05
+resource SPI_SCK 2 B13
+resource SPI_SCK 3 B03
+resource SPI_MISO 1 A06
+resource SPI_MISO 2 B14
+resource SPI_MISO 3 B04
+resource SPI_MOSI 1 A07
+resource SPI_MOSI 2 B15
+resource SPI_MOSI 3 B05
+resource ESCSERIAL 1 NONE
+resource ADC_BATT 1 A01
+resource ADC_RSSI 1 NONE
+resource ADC_CURR 1 B00
+resource ADC_EXT 1 NONE
+resource BARO_CS 1 NONE
+resource BARO_EOC 1 NONE
+resource BARO_XCLR 1 NONE
+resource COMPASS_CS 1 NONE
+resource COMPASS_EXTI 1 NONE
+resource SDCARD_CS 1 NONE
+resource SDCARD_DETECT 1 NONE
+resource PINIO 1 NONE
+resource PINIO 2 NONE
+resource PINIO 3 NONE
+resource PINIO 4 NONE
+resource USB_MSC_PIN 1 NONE
+resource FLASH_CS 1 A08
+resource OSD_CS 1 B12
+resource RX_SPI_CS 1 A15
+resource RX_SPI_EXTI 1 C13
+resource RX_SPI_BIND 1 B02
+resource RX_SPI_LED 1 C15
+resource RX_SPI_CC2500_TX_EN 1 NONE
+resource RX_SPI_CC2500_LNA_EN 1 NONE
+resource RX_SPI_CC2500_ANT_SEL 1 NONE
+resource RX_SPI_EXPRESSLRS_RESET 1 B09
+resource RX_SPI_EXPRESSLRS_BUSY 1 A13
+resource GYRO_EXTI 1 B06
+resource GYRO_EXTI 2 NONE
+resource GYRO_CS 1 A04
+resource GYRO_CS 2 NONE
+resource USB_DETECT 1 NONE
+resource PULLUP 1 NONE
+resource PULLUP 2 NONE
+resource PULLUP 3 NONE
+resource PULLUP 4 NONE
+resource PULLDOWN 1 NONE
+resource PULLDOWN 2 NONE
+resource PULLDOWN 3 NONE
+resource PULLDOWN 4 NONE
+
+# timer
+timer B01 AF2
+# pin B01: TIM3 CH4 (AF2)
+timer B08 AF2
+# pin B08: TIM4 CH3 (AF2)
+timer A00 AF1
+# pin A00: TIM2 CH1 (AF1)
+timer B10 AF1
+# pin B10: TIM2 CH3 (AF1)
+timer B07 AF2
+# pin B07: TIM4 CH2 (AF2)
+
+# dma
+dma SPI_MOSI 1 NONE
+dma SPI_MOSI 2 NONE
+dma SPI_MOSI 3 NONE
+dma SPI_MISO 1 NONE
+dma SPI_MISO 2 NONE
+dma SPI_MISO 3 NONE
+dma SPI_TX 1 NONE
+dma SPI_TX 2 NONE
+dma SPI_TX 3 NONE
+dma SPI_RX 1 NONE
+dma SPI_RX 2 NONE
+dma SPI_RX 3 NONE
+dma ADC 1 0
+# ADC 1: DMA2 Stream 0 Channel 0
+dma ADC 2 NONE
+dma ADC 3 NONE
+dma UART_TX 1 NONE
+dma UART_TX 2 NONE
+dma UART_TX 3 NONE
+dma UART_TX 4 NONE
+dma UART_TX 5 NONE
+dma UART_TX 6 NONE
+dma UART_TX 7 NONE
+dma UART_TX 8 NONE
+dma UART_RX 1 NONE
+dma UART_RX 2 NONE
+dma UART_RX 3 NONE
+dma UART_RX 4 NONE
+dma UART_RX 5 NONE
+dma UART_RX 6 NONE
+dma UART_RX 7 NONE
+dma UART_RX 8 NONE
+dma pin B01 0
+# pin B01: DMA1 Stream 2 Channel 5
+dma pin B08 0
+# pin B08: DMA1 Stream 7 Channel 2
+dma pin A00 0
+# pin A00: DMA1 Stream 5 Channel 3
+dma pin B10 0
+# pin B10: DMA1 Stream 1 Channel 3
+dma pin B07 0
+# pin B07: DMA1 Stream 3 Channel 2
+
+# feature
+feature -RX_PPM
+feature -INFLIGHT_ACC_CAL
+feature -RX_SERIAL
+feature -MOTOR_STOP
+feature -SERVO_TILT
+feature -SOFTSERIAL
+feature -GPS
+feature -RANGEFINDER
+feature -TELEMETRY
+feature -3D
+feature -RX_PARALLEL_PWM
+feature -RX_MSP
+feature -RSSI_ADC
+feature -LED_STRIP
+feature -DISPLAY
+feature -OSD
+feature -CHANNEL_FORWARDING
+feature -TRANSPONDER
+feature -AIRMODE
+feature -RX_SPI
+feature -ESC_SENSOR
+feature -ANTI_GRAVITY
+feature SOFTSERIAL
+feature TELEMETRY
+feature AIRMODE
+feature RX_SPI
+feature ANTI_GRAVITY
+
+# serial
+serial 20 1 115200 57600 0 115200
+serial 0 0 115200 57600 0 115200
+serial 1 0 115200 57600 0 115200
+
+# master
+set gyro_to_use = FIRST
+set align_mag = DEFAULT
+set mag_align_roll = 0
+set mag_align_pitch = 0
+set mag_align_yaw = 0
+set mag_bustype = SPI
+set mag_i2c_device = 0
+set mag_i2c_address = 0
+set mag_spi_device = 0
+set baro_bustype = SPI
+set baro_spi_device = 0
+set baro_i2c_device = 0
+set baro_i2c_address = 0
+set rx_spi_protocol = EXPRESSLRS
+set rx_spi_bus = 3
+set rx_spi_led_inversion = ON
+set adc_device = 1
+set blackbox_device = SPIFLASH
+set dshot_burst = OFF
+set dshot_bitbang = OFF
+set dshot_bitbang_timer = AUTO
+set current_meter = ADC
+set battery_meter = ADC
+set vbat_scale = 110
+set ibata_scale = 165
+set beeper_inversion = ON
+set beeper_od = OFF
+set beeper_frequency = 0
+set sdcard_detect_inverted = OFF
+set sdcard_mode = OFF
+set sdcard_spi_bus = 0
+set sdio_clk_bypass = OFF
+set sdio_use_cache = OFF
+set sdio_use_4bit_width = OFF
+set system_hse_mhz = 0
+set max7456_clock = NOMINAL
+set max7456_spi_bus = 2
+set max7456_preinit_opu = OFF
+set cc2500_spi_chip_detect = ON
+set led_inversion = 1
+set pinio_config = 1,1,1,1
+set pinio_box = 255,255,255,255
+set usb_msc_pin_pullup = ON
+set flash_spi_bus = 2
+set gyro_1_bustype = SPI
+set gyro_1_spibus = 1
+set gyro_1_i2cBus = 0
+set gyro_1_i2c_address = 0
+set gyro_1_sensor_align = CW90
+set gyro_1_align_roll = 0
+set gyro_1_align_pitch = 0
+set gyro_1_align_yaw = 900
+set gyro_2_bustype = SPI
+set gyro_2_spibus = 0
+set gyro_2_i2cBus = 0
+set gyro_2_i2c_address = 0
+set gyro_2_sensor_align = CW0
+set gyro_2_align_roll = 0
+set gyro_2_align_pitch = 0
+set gyro_2_align_yaw = 0
+set i2c1_pullup = OFF
+set i2c1_clockspeed_khz = 800
+set i2c2_pullup = OFF
+set i2c2_clockspeed_khz = 800
+set i2c3_pullup = OFF
+set i2c3_clockspeed_khz = 800
+set mco2_on_pc9 = OFF
+set scheduler_relax_rx = 1
+set scheduler_relax_osd = 1
+set box_user_1_name = -
+set box_user_2_name = -
+set box_user_3_name = -
+set box_user_4_name = -
+
+# end the command batch
+batch end
+
+# 
